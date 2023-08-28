@@ -5,7 +5,7 @@ require('dotenv').config()
 
 app.use(cors())
 
-const port = process.env.PORT
+const port = process.env.PORT || 7000
 
 const { usersRoutes, productsRoutes, ordersRoutes, coustmersRoutes } = require("./routes/allRoutes")
 
